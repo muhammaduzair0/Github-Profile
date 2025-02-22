@@ -1,10 +1,14 @@
-// const url = `https://api.github.com/users/${searchValue}`
 
-const searchInput = document.querySelector('#searchInput')
+let searchValue = document.getElementById('searchInput')
 
 const getSearchValue = () => {
-    userValue = searchInput.value
+    searchValue = searchInput.value
 
-    console.log(userValue)
+    console.log(searchValue)
 }   
+
+searchInput.addEventListener('input', getSearchValue)
+
+const url = `https://api.github.com/users/${searchValue}`
+
 
