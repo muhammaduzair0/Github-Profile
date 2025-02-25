@@ -1,7 +1,9 @@
 
 let searchValue = document.getElementById('searchInput')
 
-const getSearchValue = () => {
+
+// FUNCTION FOR API FETCH AND GETTING SEARCH VALUE FROM INPUT
+const getSearchValue = () => {  
     searchValue = searchInput.value
 
     console.log(searchValue)
