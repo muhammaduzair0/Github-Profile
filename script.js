@@ -1,4 +1,11 @@
 let searchValue = document.getElementById("searchInput");
+let searchBtn = document.getElementById("searchBtn");
+let profileAvatar = document.getElementById("avatar")
+let bio = document.getElementById("bio")
+let repos = document.getElementById("repos")
+let followers = document.getElementById("followers")
+let following = document.getElementById("following")
+let profileLink = document.getElementById("profileLink")
 
 // FUNCTION FOR API FETCH AND GETTING SEARCH VALUE FROM INPUT
 const getSearchValue = () => {
@@ -15,4 +22,4 @@ const getSearchValue = () => {
     });
 };
 
-searchInput.addEventListener("input", getSearchValue);
+searchBtn.addEventListener("click", getSearchValue);
