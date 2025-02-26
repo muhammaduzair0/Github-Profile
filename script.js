@@ -29,8 +29,6 @@ const getSearchValue = () => {
         return;
       }
 
-      // LOADER
-      loader.style.display = "none";
       // DISPLAYING PROFILE CARD
       profileCard.style.display = "block";
       // SETTING PROFILE AVATAR
